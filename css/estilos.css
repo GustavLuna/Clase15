@@ -41,6 +41,9 @@ body{
        margin: 0.5rem 0.5em;
        padding: 0.5rem 0.5em;
      }
+     .container-fluid{
+      padding: 0px;
+     }
 
      .footer {
       background-color: black; }
