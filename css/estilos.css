@@ -7,7 +7,7 @@ body{
 }
 
 #Header .navbar {
-  background-color: black; }
+  background-color: #000000; }
   #Header .navbar a {
     font-size: 1.5rem;
     font-family: "Josefin Sans", sans-serif;
@@ -18,12 +18,12 @@ body{
       transform: translate(10px; 5px);
       transform: scale(1.1);
       font-family: "Josefin Sans", sans-serif;
-      background-color: black;
+      background-color: #000000;
       color: #219ebc;
       color: #ccc; }
 
       #Header .dropdown-menu {
-        background-color: black; }
+        background-color: #000000; }
         #Header ul {
          list-style-type: none;
        }
@@ -45,7 +45,7 @@ body{
       padding: 0px;
      }
 
-     .footer {
+    /* .footer {
       background-color: black; }
       .footer .card__cardheader {
         border-bottom: 1px solid white; }
@@ -117,13 +117,17 @@ body{
                 .card-body{
                   font-size: 1rem;
                 }
+              }*/
+
+              .Linea{
+                border-bottom: 1px solid white;
               }
 
               .card-footer{
                 background-color: #535c61
               }
               .cardfooter {
-                background-color: black; }
+                background-color: #000000; }
                 .cardfooter .card__cardheader {
                   padding: .5rem;
                   border-bottom: 1px solid white; }
