@@ -1,289 +1,209 @@
-*{
-	margin: 0px;
-	padding: 0px;
-}
-body{
-	background-color: #bde0fe;
-}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,700&display=swap");
+body {
+  background-color: #bde0fe;
+  margin: 0px;
+  padding: 0px; }
 
-#Header .navbar {
-  background-color: #000000; }
-  #Header .navbar a {
-    font-size: 1.5rem;
+.Header__navbar {
+  background-color: #080808; }
+  .Header__navbar a {
+    background-color: #080808;
+    font-size: 1.3rem;
     font-family: "Josefin Sans", sans-serif;
     color: #219ebc;
-    transition: all 500ms ease-in-out }
+    transition: all 500ms ease-in-out; }
+  .Header__navbar a:hover {
+    transform: translate(3px);
+    transform: scale(1.1);
+    background-color: #080808;
+    font-size: 1.3rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: #219ebc;
+    color: #ccc; }
 
-    #Header .navbar a:hover {
-      transform: translate(10px; 5px);
-      transform: scale(1.1);
-      font-family: "Josefin Sans", sans-serif;
-      background-color: #000000;
+.Header .Header__navbar .navbar-brand {
+  color: #219ebc; }
+  .Header .Header__navbar .navbar-brand:hover {
+    color: #ccc; }
+
+.dropdown-menu.show {
+  background-color: #080808; }
+
+.dropdown-item {
+  width: .10rem; }
+
+.cardfooter {
+  background-color: #080808; }
+  .cardfooter .cardfooter .card__cardheader {
+    border-bottom: 1px solid white; }
+    .cardfooter .cardfooter .card__cardheader .cardfooter .card__cardheader .card__cardheader--navbar-brand {
       color: #219ebc;
-      color: #ccc; }
+      margin: 1rem; }
+      .cardfooter .cardfooter .card__cardheader .cardfooter .card__cardheader .card__cardheader--navbar-brand:hover {
+        color: #ccc; }
 
-      #Header .dropdown-menu {
-        background-color: #000000; }
-        #Header ul {
-         list-style-type: none;
-       }
-       .dropdown-menu.show {
-        width: 11rem;
-        display: flex;
-        flex-direction:column;
-        padding: .25rem .25em;
-      }
-      .dropdown-item{
-        width: .25rem;
-      }
+.Linea {
+  border-bottom: 2px solid white; }
 
-      #Header li{
-       margin: 0.5rem 0.5em;
-       padding: 0.5rem 0.5em;
-     }
-     .container-fluid{
-      padding: 0px;
-     }
+.card-footer {
+  background-color: #535c61; }
 
-    /* .footer {
-      background-color: black; }
-      .footer .card__cardheader {
-        border-bottom: 1px solid white; }
-        .footer .card__cardheader .card__cardheader--navbar-brand {
-          color: #219ebc;
-          margin: 1rem; }
-          .footer .card__cardheader .card__cardheader--navbar-brand:hover {
-            color: #ccc; }
+.cardfooter {
+  background-color: #080808; }
 
-            .Video {
-              background-color: #535c61;
-              padding: 0.5rem;
-              font-family: "Libre Franklin", sans-serif;
-              font-weight: 300;
-              border: 2px solid white;
-              color: #219ebc;
-            }
+.cardfooter .card__cardheader {
+  padding: .5rem;
+  border-bottom: 1px solid white; }
 
-            @media all and (max-width: 768px){
-              .contenedorVideo{
-                display: flex;
-              }
-            }
+.card .card__cardheader .card__cardheader--navbar-brand {
+  color: #219ebc;
+  margin: 1rem; }
 
-            @media all and (max-width: 1024px){
-              .contenedorVideo{
-                display: flex;
-              }
-            }
+.cardfooter .card__cardheader a {
+  color: #219ebc; }
 
-            .Titulo {
-              font-family: "Libre Franklin", sans-serif;
-              text-align: center;
-              font-size: 3rem; }
-            }
-            .Texto {
-              color: #219ebc;
-              font-family: "Libre Franklin", sans-serif;
-              font-weight: 600;
-              font-size: 1.5rem;
-              padding: .5rem; }
-              .Texto span {
-                color: #219ebc;
-                font-family: "Libre Franklin", sans-serif;
-                font-weight: 300;
-                font-size: 50px;
-                padding: .5rem; }
+.card-body {
+  display: flex;
+  color: white;
+  justify-content: space-between; }
+  .card-body a {
+    display: inline-block;
+    text-decoration: none;
+    color: white; }
 
-                .card{
-                  border: 2px solid white;
-                }
+.mail img a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
-                .promo{
-                 padding: 0.5em 0.5rem;
-                 margin: auto;
-                 color: #219ebc;
-                 background-color: #535c61;
-                 font-size: 30px;
-                 font-family: 'Libre Franklin', sans-serif;
-                 font-weight: bold;
-                 text-transform: uppercase;
-               }      
+@media all and (max-width: 768px) {
+  .mail p {
+    padding-left: 1rem;
+    padding-top: 2rem; } }
 
-               .table-dark{
-                color: #219ebc;
-              }
+.Redes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem; }
 
-              @media all and (max-width: 768px){
-                .card-body{
-                  font-size: 1rem;
-                }
-              }*/
+@media all and (max-width: 768px) {
+  .card-body {
+    display: block; }
+  .Redes {
+    display: none; } }
 
-              .Linea{
-                border-bottom: 2px solid white;
-              }
+.EstiloInicio p {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem;
+  padding: 1rem; }
 
-              .card-footer{
-                background-color: #535c61
-              }
-              .cardfooter {
-                background-color: #000000; }
-                .cardfooter .card__cardheader {
-                  padding: .5rem;
-                  border-bottom: 1px solid white; }
-                  .card .card__cardheader .card__cardheader--navbar-brand {
-                    color: #219ebc;
-                    margin: 1rem; }
-                    .cardfooter .card__cardheader a{
-                      color: #219ebc;
-                    }      
-                    .card-body{
-                      display: flex;
-                      color:white;
-                    }
-                    .card-body a{
-                      text-decoration: none;
-                      list-style-type: none;
-                      color: white;
-                    }
-                    .d-flex {
-                      display: flex;
-                      flex-direction: column;
-                      margin: 1rem;
-                      padding: 1rem; }
-                      .d-flex .d-flex__parrafo {
-                        font-size: 25px;
-                        font-weight: 600;
-                        font-family: "Libre Franklin", sans-serif; }
-                        .d-flex a {
-                          text-decoration: none;
-                          color: #219ebc; }
-                          .d-flex .d-flex__parrafo--texto {
-                            font-size: 25px;
-                            font-weight: 300;
-                            font-family: "Libre Franklin", sans-serif; }
+.Formulariotext {
+  padding: 1em;
+  margin: auto;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #219ebc;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 3px solid black; }
 
-                            .EstiloInicio p {
-                              margin: 1rem;
-                              padding: 1rem;
-                              font-family: "Libre Franklin", sans-serif;
-                              font-weight: 600;
-                              font-size: 50px; }
-                              .EstiloInicio {
-                                text-decoration: none;
-                                color: #219ebc; 
-                              }
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem; }
+  .d-flex .d-flex__parrafo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Libre Franklin", sans-serif; }
+  .d-flex a {
+    text-decoration: none;
+    color: #219ebc; }
+  .d-flex .d-flex__parrafo--texto {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Libre Franklin", sans-serif; }
+  .d-flex span {
+    margin-bottom: 1rem; }
 
-                              .servicios {
-                                text-decoration: none;
-                                color: black;
-                                margin: .5rem;
-                                padding: .5rem;
-                                font-size: 20px;
-                                font-weight: 600;
-                                font-family: "Libre Franklin", sans-serif; }
-                                .servicios a {
-                                  text-decoration: none;
-                                  color: #219ebc; }
-                                  
+.servicios {
+  text-decoration: none;
+  color: #080808;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif; }
+  .servicios a {
+    text-decoration: none;
+    color: #219ebc; }
 
-                                  .EstiloEventos {
-                                    margin: .5rem;
-                                    padding: .5rem;
-                                    font-size: 20px;
-                                  }
+.EstiloEventos p {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Libre Franklin", sans-serif; }
 
-                                  .EstiloEventos p{
-                                    font-weight: bold;
-                                    font-family: "Libre Franklin", sans-serif;
-                                  }
+.estiloFotosEventos {
+  margin: 0.5rem 0.5em;
+  padding: 0.5rem 0.5em;
+  font-family: "Libre Franklin", sans-serif;
+  border: 2px solid black;
+  background-color: black; }
 
-                                  .estiloFotosEventos{
-                         /*display: grid;
-                         grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
-                         grid-row-gap: 5px;*/
-                         margin: 0.5rem 0.5em;
-                         padding: 0.5rem 0.5em;
-                         font-family: 'Libre Franklin', sans-serif;
-                         border: 1px solid black;
-                         background: rgb(0,0,0);
-                         background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(33,158,188,1) 77%);
-                       }
-                       /*.estiloFotosEventos img{
-                         width: 365px;
-                         }*/
+.Formulario {
+  padding: 1rem 1em;
+  margin: 1rem 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid black; }
+  .Formulario .Formulario__Formulariotext1 {
+    font-size: 1rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold; }
+  .Formulario .Formulario__Formulariotext1--Formulariotext2 {
+    font-size: 1rem;
+    font-family: "Libre Franklin", sans-serif;
+    padding: 0.5rem 0.5em;
+    margin: 0.5rem 0.5em;
+    font-style: italic;
+    font-weight: bold; }
 
-                         .Formulario{
-                          padding: 1rem 1em;
-                          margin: 1rem 1em;
-                          display: flex;
-                          flex-direction: row;
-                          justify-content: space-around; 
-                          border: 2px solid black;
-                        }
+.Campo {
+  width: 100px;
+  border: 1px solid black;
+  transition: all 500ms ease-in-out; }
 
-                        .Formulariotext{
-                         padding: 1em;
-                         font-size: 30px;
-                         font-weight: bold;
-                         font-family:'Josefin Sans', sans-serif;
-                         background-color: #219ebc;
-                         text-align: center;
-                         border-bottom: 3px solid black;
-                       }
-                       .Campo{
-                        width: 100px;
-                        border:1px solid black;
-                        transition: all 500ms ease-in-out;
-                      }
-                      .Campo:focus{
-                        width: 150px;
-                      }
-                      .Campo2{
-                        width: 150px;
-                        height: 100px
-                        border:1px solid black;
-                        transition: all 500ms ease-in-out;
-                      }
-                      .Campo2:focus{
-                        width: 250px;
-                        height: 100px
-                      }
-                      .Formulariotext1{
-                        padding-top:10px;
-                        font-size: 15px;
-                        font-family:'Libre Franklin', sans-serif;
-                        font-weight: bold;
-                      }
+.Campo:focus {
+  width: 150px; }
 
-                      .Formulariotext2{
-                       font-size: 15px;
-                       font-family:'Libre Franklin', sans-serif;
-                       padding: 0.5rem 0.5em;
-                       margin: 0.5rem 0.5em;
-                       font-style: italic; 
-                       font-weight: bold;
-                     }
-                     .contenedorMapa {
-                      padding-left: 1rem;
-                      width: 630px;
-                      height: 510px;
-                      color: #219ebc;
-                      background-color: #535c61; }
-                      .estiloMapa{
-                       margin: .5rem; 
-                       font-size: 25px;
-                       font-family: 'Libre Franklin', sans-serif;
-                     }
-                     @media all and (max-width: 768px){
-                      .contenedorMapa{
-                        display: none;
-                      }
-                    }
+.Campo2 {
+  width: 150px;
+  height: 100px;
+  border: 1px solid black;
+  transition: all 500ms ease-in-out; }
 
-                    .waLogo a img{
-                     width: 50px;
-                     position: fixed;
-                     bottom: 100px;
-                     right: 10px;
-                   }
+.Campo2:focus {
+  width: 250px;
+  height: 150px; }
+
+.contenedorMapa {
+  padding-left: 1rem;
+  width: 615px;
+  height: 510px;
+  color: #219ebc;
+  background-color: #535c61; }
+  .contenedorMapa .contenedorMapa__estiloMapa {
+    margin: .5rem;
+    font-size: 1.5rem;
+    font-family: "Libre Franklin", sans-serif; }
+
+@media all and (max-width: 768px) {
+  .contenedorMapa {
+    display: none; } }
