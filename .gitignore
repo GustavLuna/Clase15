@@ -33,7 +33,7 @@ logs
 *.rar
 *.sql
 
-# Carpetas
-* node_modules/
+# mis carpetas
+media2
 
 
