@@ -1,0 +1,256 @@
+body{
+	background-color: $fondo;
+	margin:0px;
+	padding:0px;
+}
+
+@mixin fuentes{
+	background-color:$secundadrio;
+	font-size:1.3rem;
+	font-family:$fuente1;
+	color:$primario;
+}
+.Header__navbar{
+	background-color:$secundadrio;
+
+	a{
+		@include fuentes;
+		transition: all 500ms ease-in-out;
+	}
+	a:hover{
+		transform: translate(3px);
+		transform: scale(1.1);
+		@include fuentes;
+		color: #ccc;
+	} 
+}
+
+.Header{
+	.Header__navbar{
+		.navbar-brand{
+			color:$primario;
+			&:hover{
+				color:#ccc;
+			}
+		}
+	}
+}
+
+.dropdown-menu.show {
+	background-color:$secundadrio;
+}
+.dropdown-item {
+	width:.10rem;
+}
+
+.cardfooter{
+	background-color:$secundadrio;
+	.cardfooter .card__cardheader{
+		border-bottom: 1px solid white;
+		.cardfooter .card__cardheader .card__cardheader--navbar-brand{
+			color:$primario;
+			margin:1rem;
+			&:hover{
+				color:#ccc;
+			}
+		}
+	}
+}
+.Linea{
+	border-bottom: 2px solid white;
+}
+
+.card-footer{
+	background-color: $texto;
+}
+.cardfooter {
+	background-color: $secundadrio; }
+	.cardfooter .card__cardheader {
+		padding: .5rem;
+		border-bottom: 1px solid white; }
+		.card .card__cardheader .card__cardheader--navbar-brand {
+			color: $primario;
+			margin: 1rem; }
+			.cardfooter .card__cardheader a{
+				color: $primario;
+			}      
+			.card-body{
+				display: flex;
+				color:white;
+				justify-content: space-between;
+
+				a{
+					display:inline-block;
+					text-decoration: none;
+					color: white;
+				}
+			}
+
+			.mail img a{
+				display:flex;
+				flex-direction:row;
+				justify-content:center;
+			}
+
+			@media all and (max-width: 768px){
+				.mail p{
+					padding-left:1rem;
+					padding-top: 2rem;
+				}
+			}
+			.Redes{
+				display:flex;
+				justify-content:center;
+				padding-bottom:1rem;
+			}	
+
+			@media all and (max-width: 768px){
+				.card-body{
+					display:block;
+				}
+				.Redes{
+					display:none;
+				}
+			}
+
+			@mixin font{
+				font-family:$fuente2;
+				font-weight:$fontfranklin-bold;
+				font-size: 3rem;
+				margin:1rem;
+				padding:1rem;
+			}
+			.EstiloInicio p{
+				@include font;
+			}
+			.Formulariotext{
+				padding: 1em;
+				margin:auto;
+				font-size: 2rem;
+				font-family:$fuente1;
+				background-color: $primario;
+				text-align: center;
+				font-weight:$fontjosefin-bold;
+				border-bottom: 3px solid black;
+			}
+			@mixin parrafo ($size, $weight, $family){
+				font-size:$size;
+				font-weight: $weight;
+				font-family: $family;
+			}
+			.d-flex{
+				display:flex;
+				flex-direction: column;
+				margin: 1rem;
+				padding: 1rem;
+
+				.d-flex__parrafo{
+					@include parrafo (1.5rem, $fontfranklin-regular, $fuente2);
+				}
+				a{
+					text-decoration: none;
+					color: $primario;
+				}
+
+				.d-flex__parrafo--texto{
+					font-size: 1.5rem;
+					font-weight: $fontfranklin-light;
+					font-family:$fuente2;
+				}
+				span{
+					margin-bottom: 1rem;
+				}
+			}
+
+			.servicios {
+				text-decoration: none;
+				color: $secundadrio;
+				margin: 10px;
+				padding: 10px;
+				font-size: 20px;
+				font-weight: $fontfranklin-bold;
+				font-family: $fuente2;
+
+				a{
+					text-decoration: none;
+					color: $primario;
+				}
+			}
+
+			.EstiloEventos{
+				p{
+					margin: 10px;
+					padding: 10px;
+					font-size: 20px;
+					font-weight: bold;
+					font-family: $fuente2;
+				}
+			}
+			.estiloFotosEventos{
+				margin: 0.5rem 0.5em;
+				padding: 0.5rem 0.5em;
+				font-family: $fuente2;
+				border: 2px solid black;
+				background-color:black;
+			}
+			.Formulario{
+				padding: 1rem 1em;
+				margin: 1rem 1em;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around; 
+				border: 2px solid black;
+				.Formulario__Formulariotext1{
+					font-size: 1rem;
+					font-family:$fuente2;
+					font-weight: bold;
+				}
+				.Formulario__Formulariotext1--Formulariotext2{
+					font-size: 1rem;
+					font-family:$fuente2;
+					padding: 0.5rem 0.5em;
+					margin: 0.5rem 0.5em;
+					font-style: italic; 
+					font-weight: bold;
+				}	
+			}
+
+			.Campo{
+				width: 100px;
+				border:1px solid black;
+				transition: all 500ms ease-in-out;
+			}
+			.Campo:focus{
+				width: 150px;
+			}
+			.Campo2{
+				width: 150px;
+				height: 100px;
+				border:1px solid black;
+				transition: all 500ms ease-in-out;
+			}
+
+			.Campo2:focus{
+				width: 250px;
+				height: 150px
+			}
+
+			.contenedorMapa{
+				padding-left: 1rem; 
+				width:615px;
+				height:510px;
+				color: $primario;
+				background-color:$texto;
+				.contenedorMapa__estiloMapa{
+					margin:.5rem;
+					font-size: 1.5rem;
+					font-family:$fuente2;
+				}
+				.contenedorMapa__estiloMapa--Mapa{
+				}	
+			}
+			@media all and (max-width: 768px){
+				.contenedorMapa{
+					display:none;
+				}
+			}
