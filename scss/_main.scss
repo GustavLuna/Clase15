@@ -5,13 +5,13 @@ body{
 }
 
 @mixin fuentes{
-	background-color:$secundadrio;
+	background-color:$secundario;
 	font-size:1.3rem;
 	font-family:$fuente1;
 	color:$primario;
 }
 .Header__navbar{
-	background-color:$secundadrio;
+	background-color:$secundario;
 
 	a{
 		@include fuentes;
@@ -36,15 +36,15 @@ body{
 	}
 }
 
-.dropdown-menu.show {
-	background-color:$secundadrio;
+.dropdown-menu {
+	background-color:$secundario;
 }
-.dropdown-item {
-	width:.10rem;
+.dropdown-item{
+	display:inline;
 }
 
 .cardfooter{
-	background-color:$secundadrio;
+	background-color:$secundario;
 	.cardfooter .card__cardheader{
 		border-bottom: 1px solid white;
 		.cardfooter .card__cardheader .card__cardheader--navbar-brand{
@@ -64,7 +64,7 @@ body{
 	background-color: $texto;
 }
 .cardfooter {
-	background-color: $secundadrio; }
+	background-color: $secundario; }
 	.cardfooter .card__cardheader {
 		padding: .5rem;
 		border-bottom: 1px solid white; }
@@ -164,7 +164,7 @@ body{
 
 			.servicios {
 				text-decoration: none;
-				color: $secundadrio;
+				color: $secundario;
 				margin: 10px;
 				padding: 10px;
 				font-size: 20px;

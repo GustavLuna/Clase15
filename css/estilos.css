@@ -28,11 +28,11 @@ body {
   .Header .Header__navbar .navbar-brand:hover {
     color: #ccc; }
 
-.dropdown-menu.show {
+.dropdown-menu {
   background-color: #080808; }
 
 .dropdown-item {
-  width: .10rem; }
+  display: inline; }
 
 .cardfooter {
   background-color: #080808; }
