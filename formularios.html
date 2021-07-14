@@ -17,23 +17,34 @@
 <body>
 	<h3 class="Formulariotext">Solicitud de Contacto</h3>
 
-
+	<!-- Formulario de Contacto -->
 	<div class="Formulario">
 		<form action="recibe.html" method="POST" enctype="multipart/form-data">
-
-			<input type="text"name="nombre" placeholder="ingresa tu nombre"class="Campo">
-			<input type="text" name="apellido"placeholder="ingresa tu apellido"class="Campo">
-			<input type="email" name="Email" placeholder="ingresa  tu email"class="Campo">
-			<input type="Telefono" name="Telefono"placeholder="tu telefono"class="Campo">
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+					<input type="text" class="form-control" name="nombre" placeholder="tu nombre" >
+				</div>
+				<div class="col-md-6 mb-3">
+					<input type="text" class="form-control" name="apellido" placeholder="tu apellido">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+					<input type="text" class="form-control" name="mail" placeholder="tu mail">
+				</div>
+				<div class="col-md-6 mb-3">
+					<input type="text" class="form-control" name="teléfono" placeholder="tu teléfono">
+				</div>
+			</div>
 
 			<div>
 				<label class="Formulariotext1">Ingresa tu consulta:</label>
 			</div>		
 
-			<textarea class="Campo2"></textarea>
-
-
-			<label class="Formulariotext2">Selecciona un turno para que nos contactemos: Mañana</label>
+			<textarea class="form-control Campo2"></textarea>
+			<div class="alejar"></div>
+			<label class="Formulariotext2">Selecciona un turno para que nos contactemos:</label>
+			<label>Mañana</label>
 			<input type="radio" name="turno" value="manana">
 			<select>
 				<option>09:00</option>
@@ -49,8 +60,10 @@
 			</select>
 			<div>	
 				<div>	
+					<div class="alejar"></div>
 					<p class="Formulariotext2">Elegi los servicios:</p>
 				</div>
+
 				<div>	
 					<p class="Formulariotext2"><label>Foto</label>
 						<input type="checkbox" name="servicios" value="Foto">
@@ -60,9 +73,11 @@
 						<input type="checkbox" name="servicios" value="Fotoyvideo">
 						<label>Edición</label>
 						<input type="checkbox" name="servicios" value="Edicion">
-						<br>
-						<input type="submit" name="sube_form" value="Enviar">
-						<input type="reset" name="resetear" value="Borrar todo"></p>
+
+						<div class="alejar"></div>
+
+						<button class="btn btn-dark boton" type="submit">Enviar</button>
+						<button class="btn btn-dark boton" type="submit">Borrar todo</button></p>
 					</div>
 				</form>
 			</div>
@@ -74,44 +89,52 @@
 				</div>
 			</div>
 		</div>   
+
+		<!-- Completar para el Footer -->
+		<div class="llenarEspacio5"></div>
+
+		<!-- Linea Pre Footer -->
 		<div class="Linea"></div>
+
 		<!-- Footer -->
-        <div class="footer">
-            <div class="cardfooter">
-                <div class="cardheader card__cardheader">
-                    <a class="navbar-brand card__cardheader--navbar-brand" href="index.html">Gustav Luna</a>
-                </div>
-                <div class="card-body">
-                    <div class="mail"> 
-                        <img src="media/ubicacion.png" alt=""><span>Monte Grande, Buenos Aires - Argentina</span>  
-                    </div>
+		<div class="footer">
+			<div class="cardfooter">
+				<div class="cardheader card__cardheader">
+					<a class="navbar-brand card__cardheader--navbar-brand" href="index.html">Gustav Luna</a>
+				</div>
 
-                    <div class="mail">
-                       <img src="media/telefono.png" alt=""><span>+54 9 351 2636888</span></div>
-                       <div class="mail">
-                          <img src="media/Mail.png" alt=""><a href="mailto:gustav.luna@hotmail.com">gustav.luna@hotmail.com</a>   
-                      </div>
-                      <div class="mail">
-                       <p>TODOS LOS DERECHOS RESERVADOS © | 2021</p>   
-                   </div>
-                   
-               </div>     
+				<!-- Ubicación -->
+				<div class="card-body">
+					<div class="mail"> 
+						<img src="media/ubicacion.png" alt=""><span>Monte Grande, Buenos Aires - Argentina</span>  
+					</div>
 
-               <div class="Redes">          
-                <a href="https://www.facebook.com/Rulay" target="_blank"><img src="media/fbLogo.png" alt="logoface"></a>
-                <a href="https://www.instagram.com/gustav.lunafotografia/?hl=es" target="_blank"><img src="media/InstaLogo.png" alt="logoface"></a>
-                <a href="https://www.linkedin.com/in/gustavo-luna-2a2385217/" target="_blank"><img src="media/inLogo.png" alt="logoface"></a>
-                <a href="https://wa.link/ucfbyy" target="_blank"><img src="media/waLogo1.png" alt="logoface"></a>
-                <a href="https://www.youtube.com/channel/UC6-B8mZo8j_Tnc3X500WFBA" target="_blank"><img src="media/youtubelogo.png" alt="logoface"></a>
-            </div>
-        </div>
-    </div>
-	</div>
-	<!-- Optional JavaScript; choose one of the two! -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+					<!-- Contacto -->
+					<div class="mail">
+						<img src="media/telefono.png" alt=""><span>+54 9 351 2636888</span>
+						<img src="media/Mail.png" alt=""><a href="mailto:gustav.luna@hotmail.com">gustav.luna@hotmail.com</a>
+					</div>
 
-</body>
-</html>
+					<!-- Redes Sociales -->
+					<div class="Redes">          
+						<a href="https://www.facebook.com/Rulay" target="_blank"><img src="media/fbLogo.png" alt=""></a>
+						<a href="https://www.instagram.com/gustav.lunafotografia/?hl=es" target="_blank"><img src="media/InstaLogo.png" alt=""></a>
+						<a href="https://www.linkedin.com/in/gustavo-luna-2a2385217/" target="_blank"><img src="media/inLogo.png" alt=""></a>
+						<a href="https://wa.link/ucfbyy" target="_blank"><img src="media/waLogo1.png" alt=""></a>
+						<a href="https://www.youtube.com/channel/UC6-B8mZo8j_Tnc3X500WFBA" target="_blank"><img src="media/youtubelogo.png" alt=""></a>
+					</div>
+
+				</div>     
+				<div class="mail2">
+					<p>TODOS LOS DERECHOS RESERVADOS © | 2021</p>   
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript; choose one of the two! -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	</body>
+	</html>
 
 

@@ -57,7 +57,7 @@ body{
 	}
 }
 .Linea{
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid $tercero;
 }
 
 .card-footer{
@@ -67,7 +67,7 @@ body{
 	background-color: $secundario; }
 	.cardfooter .card__cardheader {
 		padding: .5rem;
-		border-bottom: 1px solid white; }
+		border-bottom: 1px solid $tercero; }
 		.card .card__cardheader .card__cardheader--navbar-brand {
 			color: $primario;
 			margin: 1rem; }
@@ -76,13 +76,14 @@ body{
 			}      
 			.card-body{
 				display: flex;
-				color:white;
+				color:$tercero;
+				align-items: baseline;
 				justify-content: space-between;
 
 				a{
 					display:inline-block;
 					text-decoration: none;
-					color: white;
+					color: $tercero;
 				}
 			}
 
@@ -98,12 +99,27 @@ body{
 					padding-top: 2rem;
 				}
 			}
-			.Redes{
+
+			.mail2{
 				display:flex;
 				justify-content:center;
+				color:white;
+				padding-left:5rem;
+			}
+			.mail2Recibe{
+				p{
+				display:flex;
+				justify-content:center;
+				color:white;
+				padding-left:5rem;
+				}
+			}
+			.Redes{
+				display:flex;
+				justify-content:flex-end;
 				padding-bottom:1rem;
+				padding-right:1rem;
 			}	
-
 			@media all and (max-width: 768px){
 				.card-body{
 					display:block;
@@ -112,7 +128,6 @@ body{
 					display:none;
 				}
 			}
-
 			@mixin font{
 				font-family:$fuente2;
 				font-weight:$fontfranklin-bold;
@@ -122,6 +137,21 @@ body{
 			}
 			.EstiloInicio p{
 				@include font;
+			}
+			.llenarEspacio{
+				padding:9.5rem;
+			}
+			.llenarEspacio2{
+				padding:5.6rem;
+			}
+			.llenarEspacio4{
+				padding:3.8rem;
+			}
+			.llenarEspacio5{
+				padding:1.6rem;
+			}
+			.llenarEspacio6{
+				padding:15.4rem;
 			}
 			.Formulariotext{
 				padding: 1em;
@@ -176,6 +206,19 @@ body{
 					color: $primario;
 				}
 			}
+			///*css tabla*///
+			.Servicios{
+				text-transform: uppercase;
+				border:2px solid red;
+				background-color:$fondo;
+			}
+			.card-text{
+				color:$secundario;
+				font-size: 2rem;
+				font-weight: $fontfranklin-bold;
+				font-family: $fuente2;
+			}
+			///*css tabla*///
 
 			.EstiloEventos{
 				p{
@@ -194,6 +237,8 @@ body{
 				background-color:black;
 			}
 			.Formulario{
+				font-family:$fuente2;
+				font-weight: bold;
 				padding: 1rem 1em;
 				margin: 1rem 1em;
 				display: flex;
@@ -215,6 +260,8 @@ body{
 				}	
 			}
 
+		///*posible eliminacíon*///
+		/*
 			.Campo{
 				width: 100px;
 				border:1px solid black;
@@ -223,21 +270,35 @@ body{
 			.Campo:focus{
 				width: 150px;
 			}
+			*/
+
+			.form-control{
+				resize: none;
+				border:1px solid black;
+			}	
 			.Campo2{
-				width: 150px;
+				width: 350px;
 				height: 100px;
 				border:1px solid black;
 				transition: all 500ms ease-in-out;
 			}
-
 			.Campo2:focus{
-				width: 250px;
+				width: 400px;
 				height: 150px
 			}
+			.alejar{
+				padding:1rem;
+			}
 
+			.boton{
+				font-size: 1.1rem;
+				font-weight: $fontjosefin-bold;
+				background-color:$primario;
+				color:$secundario;
+			}
 			.contenedorMapa{
 				padding-left: 1rem; 
-				width:615px;
+				width:635px;
 				height:510px;
 				color: $primario;
 				background-color:$texto;

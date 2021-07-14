@@ -45,7 +45,7 @@ body {
         color: #ccc; }
 
 .Linea {
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid #ffffff; }
 
 .card-footer {
   background-color: #535c61; }
@@ -55,7 +55,7 @@ body {
 
 .cardfooter .card__cardheader {
   padding: .5rem;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #ffffff; }
 
 .card .card__cardheader .card__cardheader--navbar-brand {
   color: #219ebc;
@@ -66,12 +66,13 @@ body {
 
 .card-body {
   display: flex;
-  color: white;
+  color: #ffffff;
+  align-items: baseline;
   justify-content: space-between; }
   .card-body a {
     display: inline-block;
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
 
 .mail img a {
   display: flex;
@@ -83,10 +84,23 @@ body {
     padding-left: 1rem;
     padding-top: 2rem; } }
 
-.Redes {
+.mail2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem; }
+  color: white;
+  padding-left: 5rem; }
+
+.mail2Recibe p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-left: 5rem; }
+
+.Redes {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  padding-right: 1rem; }
 
 @media all and (max-width: 768px) {
   .card-body {
@@ -100,6 +114,21 @@ body {
   font-size: 3rem;
   margin: 1rem;
   padding: 1rem; }
+
+.llenarEspacio {
+  padding: 9.5rem; }
+
+.llenarEspacio2 {
+  padding: 5.6rem; }
+
+.llenarEspacio4 {
+  padding: 3.8rem; }
+
+.llenarEspacio5 {
+  padding: 1.6rem; }
+
+.llenarEspacio6 {
+  padding: 15.4rem; }
 
 .Formulariotext {
   padding: 1em;
@@ -142,6 +171,17 @@ body {
     text-decoration: none;
     color: #219ebc; }
 
+.Servicios {
+  text-transform: uppercase;
+  border: 2px solid red;
+  background-color: #bde0fe; }
+
+.card-text {
+  color: #080808;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif; }
+
 .EstiloEventos p {
   margin: 10px;
   padding: 10px;
@@ -157,6 +197,8 @@ body {
   background-color: black; }
 
 .Formulario {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
   padding: 1rem 1em;
   margin: 1rem 1em;
   display: flex;
@@ -175,27 +217,42 @@ body {
     font-style: italic;
     font-weight: bold; }
 
-.Campo {
-  width: 100px;
-  border: 1px solid black;
-  transition: all 500ms ease-in-out; }
-
-.Campo:focus {
-  width: 150px; }
+/*
+			.Campo{
+				width: 100px;
+				border:1px solid black;
+				transition: all 500ms ease-in-out;
+			}
+			.Campo:focus{
+				width: 150px;
+			}
+			*/
+.form-control {
+  resize: none;
+  border: 1px solid black; }
 
 .Campo2 {
-  width: 150px;
+  width: 350px;
   height: 100px;
   border: 1px solid black;
   transition: all 500ms ease-in-out; }
 
 .Campo2:focus {
-  width: 250px;
+  width: 400px;
   height: 150px; }
+
+.alejar {
+  padding: 1rem; }
+
+.boton {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #219ebc;
+  color: #080808; }
 
 .contenedorMapa {
   padding-left: 1rem;
-  width: 615px;
+  width: 635px;
   height: 510px;
   color: #219ebc;
   background-color: #535c61; }
