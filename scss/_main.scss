@@ -106,10 +106,10 @@ body{
 
 			.mail2Recibe{
 				p{
-				display:flex;
-				justify-content:center;
-				color:white;
-				padding-left:5rem;
+					display:flex;
+					justify-content:center;
+					color:white;
+					padding-left:5rem;
 				}
 			}
 			.Redes{
@@ -134,7 +134,7 @@ body{
 			}
 
 			@media (max-width: 1024px) {
-							.card-body{
+				.card-body{
 					display:block;
 				}
 				.card-body img{
@@ -279,18 +279,6 @@ body{
 				}	
 			}
 
-		///*posible eliminacíon*///
-		/*
-			.Campo{
-				width: 100px;
-				border:1px solid black;
-				transition: all 500ms ease-in-out;
-			}
-			.Campo:focus{
-				width: 150px;
-			}
-			*/
-
 			.form-control{
 				resize: none;
 				border:1px solid black;
@@ -299,12 +287,8 @@ body{
 				width: 350px;
 				height: 100px;
 				border:1px solid black;
-				transition: all 500ms ease-in-out;
 			}
-			.Campo2:focus{
-				width: 400px;
-				height: 150px
-			}
+
 			.alejar{
 				padding:1rem;
 			}
