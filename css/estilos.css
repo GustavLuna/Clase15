@@ -74,15 +74,14 @@ body {
     text-decoration: none;
     color: #ffffff; }
 
-.mail img a {
+.mail {
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  align-items: center; }
 
 @media all and (max-width: 768px) {
-  .mail p {
-    padding-left: 1rem;
-    padding-top: 2rem; } }
+  .mail {
+    display: flex;
+    flex-direction: column; } }
 
 .mail2 {
   display: flex;
@@ -105,8 +104,22 @@ body {
 @media all and (max-width: 768px) {
   .card-body {
     display: block; }
+  .card-body img {
+    display: block; }
   .Redes {
-    display: none; } }
+    display: none; }
+  .mail2 {
+    padding-left: 0rem; } }
+
+@media (max-width: 1024px) {
+  .card-body {
+    display: block; }
+  .card-body img {
+    display: block; }
+  .Redes {
+    display: none; }
+  .mail2 {
+    padding-left: 0rem; } }
 
 .EstiloInicio p {
   font-family: "Libre Franklin", sans-serif;
