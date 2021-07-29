@@ -23,8 +23,11 @@ body{
 		@include fuentes;
 		color: #ccc;
 	} 
-}
+	.logo img{
 
+		width: 8rem;
+	}	
+}
 .Header{
 	.Header__navbar{
 		.navbar-brand{
@@ -66,14 +69,16 @@ body{
 .cardfooter {
 	background-color: $secundario; }
 	.cardfooter .card__cardheader {
-		padding: .5rem;
+		padding-left: .5rem;
 		border-bottom: 1px solid $tercero; }
 		.card .card__cardheader .card__cardheader--navbar-brand {
 			color: $primario;
 			margin: 1rem; }
-			.cardfooter .card__cardheader a{
+			.cardfooter .card__cardheader a img{
+				width: 7rem;
 				color: $primario;
-			}      
+			}   
+
 			.card-body{
 				display: flex;
 				color:$tercero;
@@ -154,6 +159,9 @@ body{
 				margin:1rem;
 				padding:1rem;
 			}
+			.EstiloInicio{
+				padding-top:4rem;
+			}
 			.EstiloInicio p{
 				@include font;
 			}
@@ -167,7 +175,7 @@ body{
 				padding:3.8rem;
 			}
 			.llenarEspacio5{
-				padding:1.6rem;
+				padding:3rem;
 			}
 			.llenarEspacio6{
 				padding:15.4rem;
@@ -190,6 +198,7 @@ body{
 			.d-flex{
 				display:flex;
 				flex-direction: column;
+				text-align: justify;
 				margin: 1rem;
 				padding: 1rem;
 
@@ -210,7 +219,12 @@ body{
 					margin-bottom: 1rem;
 				}
 			}
-
+			/*.alejarNavbar2{
+				padding-top: 6rem;
+			}
+			.alejarNavbar4{
+				padding-top: 4rem;
+			}*/
 			.servicios {
 				text-decoration: none;
 				color: $secundario;
@@ -240,6 +254,7 @@ body{
 			///*css tabla*///
 
 			.EstiloEventos{
+
 				p{
 					margin: 10px;
 					padding: 10px;
@@ -260,6 +275,7 @@ body{
 				font-weight: bold;
 				padding: 1rem 1em;
 				margin: 1rem 1em;
+				margin-top:5rem;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-around; 
