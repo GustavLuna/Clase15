@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,700&display=swap");
@@ -6,6 +7,7 @@ body {
   margin: 0px;
   padding: 0px; }
 
+/*-- Header --*/
 .Header__navbar {
   background-color: #080808; }
   .Header__navbar a {
@@ -36,6 +38,7 @@ body {
 .dropdown-item {
   display: inline; }
 
+/*-- Banner slider --*/
 .carousel-caption h5 {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.5rem;
@@ -47,6 +50,7 @@ body {
   font-weight: 600;
   color: #f8fcff; }
 
+/*-- Footer --*/
 .cardfooter {
   background-color: #080808; }
   .cardfooter .cardfooter .card__cardheader {
@@ -78,6 +82,7 @@ body {
   width: 7rem;
   color: #219ebc; }
 
+/*-- Ubicación --*/
 .card-body {
   display: flex;
   color: #f8fcff;
@@ -88,6 +93,7 @@ body {
     text-decoration: none;
     color: #f8fcff; }
 
+/*-- Contacto --*/
 .mail {
   display: flex;
   align-items: center; }
@@ -103,12 +109,7 @@ body {
   color: white;
   padding-left: 5rem; }
 
-.mail2Recibe p {
-  display: flex;
-  justify-content: center;
-  color: white;
-  padding-left: 5rem; }
-
+/*-- Redes Sociales --*/
 .Redes {
   display: flex;
   justify-content: flex-end;
@@ -135,6 +136,7 @@ body {
   .mail2 {
     padding-left: 0rem; } }
 
+/*-- Inicio --*/
 .EstiloInicio {
   padding-top: 4rem; }
 
@@ -152,7 +154,7 @@ body {
   padding: 2.1rem; }
 
 .llenarEspacio4 {
-  padding: 3.7rem; }
+  padding: 11.7rem; }
 
 .llenarEspacio5 {
   padding: .78rem; }
@@ -170,6 +172,7 @@ body {
   font-weight: 600;
   border-bottom: 3px solid black; }
 
+/*-- Nosotros --*/
 .d-flex {
   display: flex;
   flex-direction: column;
@@ -190,29 +193,7 @@ body {
   .d-flex span {
     margin-bottom: 1rem; }
 
-.servicios {
-  text-decoration: none;
-  color: #080808;
-  margin: 10px;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Libre Franklin", sans-serif; }
-  .servicios a {
-    text-decoration: none;
-    color: #219ebc; }
-
-.Servicios {
-  text-transform: uppercase;
-  border: 2px solid red;
-  background-color: #bde0fe; }
-
-.card-text {
-  color: #080808;
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: "Libre Franklin", sans-serif; }
-
+/*-- Eventos --*/
 .EstiloEventos p {
   margin: 10px;
   padding: 10px;
@@ -227,6 +208,20 @@ body {
   border: 2px solid black;
   background-color: black; }
 
+/*-- Servicios --*/
+.servicios {
+  text-decoration: none;
+  color: #080808;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif; }
+  .servicios a {
+    text-decoration: none;
+    color: #219ebc; }
+
+/*-- Formulario --*/
 .Formulario {
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
