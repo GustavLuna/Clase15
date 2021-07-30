@@ -36,6 +36,28 @@ body {
 .dropdown-item {
   display: inline; }
 
+.carousel-caption h5 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #080808; }
+
+.carousel-caption p {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  color: #f8fcff; }
+
+.estiloTexto h5 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #080808; }
+
+.estiloTexto {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  color: #f8fcff; }
+
 .cardfooter {
   background-color: #080808; }
   .cardfooter .cardfooter .card__cardheader {
@@ -47,7 +69,7 @@ body {
         color: #ccc; }
 
 .Linea {
-  border-bottom: 2px solid #ffffff; }
+  border-bottom: 2px solid #f8fcff; }
 
 .card-footer {
   background-color: #535c61; }
@@ -57,7 +79,7 @@ body {
 
 .cardfooter .card__cardheader {
   padding-left: .5rem;
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #f8fcff; }
 
 .card .card__cardheader .card__cardheader--navbar-brand {
   color: #219ebc;
@@ -69,13 +91,13 @@ body {
 
 .card-body {
   display: flex;
-  color: #ffffff;
+  color: #f8fcff;
   align-items: baseline;
   justify-content: space-between; }
   .card-body a {
     display: inline-block;
     text-decoration: none;
-    color: #ffffff; }
+    color: #f8fcff; }
 
 .mail {
   display: flex;
@@ -135,16 +157,16 @@ body {
   padding: 1rem; }
 
 .llenarEspacio {
-  padding: 9.5rem; }
+  padding: 4.3rem; }
 
 .llenarEspacio2 {
-  padding: 5.6rem; }
+  padding: 2.1rem; }
 
 .llenarEspacio4 {
-  padding: 3.8rem; }
+  padding: 3.7rem; }
 
 .llenarEspacio5 {
-  padding: 3rem; }
+  padding: .78rem; }
 
 .llenarEspacio6 {
   padding: 15.4rem; }
@@ -179,12 +201,6 @@ body {
   .d-flex span {
     margin-bottom: 1rem; }
 
-/*.alejarNavbar2{
-				padding-top: 6rem;
-			}
-			.alejarNavbar4{
-				padding-top: 4rem;
-			}*/
 .servicios {
   text-decoration: none;
   color: #080808;
@@ -227,7 +243,7 @@ body {
   font-weight: bold;
   padding: 1rem 1em;
   margin: 1rem 1em;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
