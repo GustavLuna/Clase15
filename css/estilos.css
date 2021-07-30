@@ -47,17 +47,6 @@ body {
   font-weight: 600;
   color: #f8fcff; }
 
-.estiloTexto h5 {
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #080808; }
-
-.estiloTexto {
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 600;
-  color: #f8fcff; }
-
 .cardfooter {
   background-color: #080808; }
   .cardfooter .cardfooter .card__cardheader {

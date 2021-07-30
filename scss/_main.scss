@@ -50,23 +50,12 @@ body{
 	font-size: 1.5rem;
 	font-weight: $fontfranklin-bold;
 	color:$secundario;
-	}
-.carousel-caption p{
-			font-family: $fuente2;
-		font-weight: $fontfranklin-bold;
-		color:$tercero;
-}	
-.estiloTexto h5{
-	font-family: $fuente2;
-	font-size: 1.3rem;
-	font-weight: $fontfranklin-bold;
-	color:$secundario;
 }
-	.estiloTexto{
-		font-family: $fuente2;
-		font-weight: $fontfranklin-bold;
-		color:$tercero;
-	}
+.carousel-caption p{
+	font-family: $fuente2;
+	font-weight: $fontfranklin-bold;
+	color:$tercero;
+}	
 
 .cardfooter{
 	background-color:$secundario;
